@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Search Page</title>
+   <title>Página de Búsqueda</title>
+   <link rel="shortcut icon" type="image/x-icon" href="images/Fondo/iconoKH.png" />
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <!-- Fuente Awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
+   <!-- Enlace al archivo css  -->
+   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
-   <!-- header section starts  -->
-
+   <!-- Sección Cabecera  -->
    <header class="header">
 
       <nav class="navbar nav-1">
          <section class="flex">
-            <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
+            <a href="index.html" class="logo"><i class="fas fa-house"></i>Kame<span>House</span></a>
 
             <ul>
-               <li><a href="#">post property<i class="fas fa-paper-plane"></i></a></li>
+               <li><a href="#">Publicar Propiedad<i class="fas fa-paper-plane"></i></a></li>
             </ul>
          </section>
       </nav>
@@ -37,44 +36,44 @@
 
             <div class="menu">
                <ul>
-                  <li><a href="#">buy<i class="fas fa-angle-down"></i></a>
+                  <li><a href="#">Comprar<i class="fas fa-angle-down"></i></a>
                      <ul>
-                        <li><a href="#">house</a></li>
-                        <li><a href="#">flat</a></li>
-                        <li><a href="#">shop</a></li>
-                        <li><a href="#">ready to move</a></li>
-                        <li><a href="#">furnished</a></li>
+                        <li><a href="#">Casa</a></li>
+                        <li><a href="#">Departamento</a></li>
+                        <li><a href="#">Local Comercial</a></li>
+                        <li><a href="#">Listo para Mudarse</a></li>
+                        <li><a href="#">Amueblado</a></li>
                      </ul>
                   </li>
-                  <li><a href="#">sell<i class="fas fa-angle-down"></i></a>
+                  <li><a href="#">Vender<i class="fas fa-angle-down"></i></a>
                      <ul>
-                        <li><a href="#">post property</a></li>
-                        <li><a href="#">dashboard</a></li>
+                        <li><a href="#">Publicar Propiedad</a></li>
+                        <li><a href="#">Panel de Control</a></li>
                      </ul>
                   </li>
-                  <li><a href="#">rent</a>
+                  <li><a href="#">Alquilar<i class="fas fa-angle-down"></i></a>
                      <ul>
-                        <li><a href="#">house</a></li>
-                        <li><a href="#">flat</a></li>
-                        <li><a href="#">shop</a></li>
+                        <li><a href="#">Casa</a></li>
+                        <li><a href="#">Departamento</a></li>
+                        <li><a href="#">Local Comercial</a></li>
                      </ul>
                   </li>
-                  <li><a href="#">help<i class="fas fa-angle-down"></i></a>
+                  <li><a href="#">Ayuda<i class="fas fa-angle-down"></i></a>
                      <ul>
-                        <li><a href="about.html">about us</a></i></li>
-                        <li><a href="contact.html">contact us</a></i></li>
-                        <li><a href="contact.html#faq">FAQ</a></i></li>
+                        <li><a href="about.html">Sobre Nosotros</a></i></li>
+                        <li><a href="contact.html">Contáctenos</a></i></li>
+                        <li><a href="contact.html#faq">Preguntas Frecuentes</a></i></li>
                      </ul>
                   </li>
                </ul>
             </div>
 
             <ul>
-               <li><a href="#">saved <i class="far fa-heart"></i></a></li>
-               <li><a href="#">account <i class="fas fa-angle-down"></i></a>
+               <li><a href="#">Guardar <i class="far fa-heart"></i></a></li>
+               <li><a href="#">Cuenta <i class="fas fa-angle-down"></i></a>
                   <ul>
-                     <li><a href="login.html">login</a></li>
-                     <li><a href="register.html">register</a></li>
+                     <li><a href="login.html">Iniciar Sesión</a></li>
+                     <li><a href="register.html">Registrase</a></li>
                   </ul>
                </li>
             </ul>
@@ -82,16 +81,14 @@
       </nav>
 
    </header>
+   <!-- Fin Cabecera -->
 
-   <!-- header section ends -->
-
-   <!-- search filter section starts  -->
-
+   <!-- Sección Filtro  -->
    <section class="filters" style="padding-bottom: 0;">
 
       <form action="" method="post">
          <div id="close-filter"><i class="fas fa-times"></i></div>
-         <h3>filter your search</h3>
+         <h3>Filtra tu Búsqueda</h3>
 
          <div class="flex">
             <div class="box">
@@ -204,16 +201,14 @@
       </form>
 
    </section>
-
-   <!-- search filter section ends -->
+   <!-- Fin Filtro -->
 
    <div id="filter-btn" class="fas fa-filter"></div>
 
-   <!-- listings section starts  -->
-
+   <!-- Sección Lista  -->
    <section class="listings">
 
-      <h1 class="heading">searched results</h1>
+      <h1 class="heading">Resultados de la Búsqueda</h1>
 
       <div class="box-container">
 
@@ -312,7 +307,7 @@
             <a href="tel:+51 996034101"><i class="fas fa-phone"></i><span>+51 996034101</span></a>
             <a href="tel:01 707-4561"><i class="fas fa-phone"></i><span>01 707-4561</span></a>
             <a href="mailto:U18207722@utp.edu.pe"><i class="fas fa-envelope"></i><span>U18207722@utp.edu.pe</span></a>
-            <a href="#"><i class="fas fa-map-marker-alt"></i><span>mumbai, india - 400104</span></a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i><span>Lima, Perú - 15001</span></a>
          </div>
 
          <div class="box">
@@ -326,7 +321,7 @@
          <div class="box">
             <a href="#"><span>Facebook</span><i class="fab fa-facebook-f"></i></a>
             <a href="#"><span>Twitter</span><i class="fab fa-twitter"></i></a>
-            <a href="#"><span>Linkedin</span><i class="fab fa-linkedin"></i></a>
+            <a href="#"><span>LinkedIn</span><i class="fab fa-linkedin"></i></a>
             <a href="#"><span>Instagram</span><i class="fab fa-instagram"></i></a>
 
          </div>
@@ -338,7 +333,7 @@
    <!-- Fin Footer -->
 
 
-   <!-- custom js file link  -->
+   <!-- Enlace al archivo JavaScript  -->
    <script src="js/script.js"></script>
 
    <script>
