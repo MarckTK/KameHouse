@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
         }else{
             if($new_pass != $empty_pass){
                 $update_pass = $conn->prepare("UPDATE `users` SET password = ? WHERE id = ?");
-                $update_pass->execute([$new_pass, $user_id]);
+                $update_pass->execute([$c_pass, $user_id]);
                 $success_msg[] = '¡Tu Contraseña ha sido Actualizada!';
             }else{
                 $warning_msg[] = '¡Por favor ingrese una Nueva Contraseña!';

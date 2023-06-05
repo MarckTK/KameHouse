@@ -50,7 +50,7 @@
                         <?php if($user_id != ''){ ?>
                         <li><a href="update.php">Actualizar Perfil</a></li>
                         <li><a href="components/user_logout.php"
-                                onclick="return confirm('¿Desea cerrar sesión en este sitio web?');">Cerrar Sesión</a>
+                                onclick="return confirm('¿Desea Cerrar Sesión en KameHouse?');">Cerrar Sesión</a>
                             <?php } ?>
                         </li>
                     </ul>
