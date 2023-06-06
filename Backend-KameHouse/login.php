@@ -69,6 +69,7 @@ if(isset($_POST['submit'])){
     <?php include 'components/footer.php'; ?>
     <!-- Fin Footer -->
 
+    <!-- Enlace de la Alerta -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
     <!-- Enlace al archivo JavaScript  -->
