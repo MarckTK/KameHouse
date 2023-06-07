@@ -1,6 +1,6 @@
 <?php
 
-include'connect.php';
+include 'connect.php';
 
 setcookie('user_id', '', time() - 1, '/');
 
