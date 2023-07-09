@@ -1,5 +1,4 @@
 <!-- Sección Cabecera  -->
-
 <header class="header">
 
     <div class="navbar nav-1">
@@ -60,5 +59,4 @@
     </div>
 
 </header>
-
 <!-- Fin Cabecera -->

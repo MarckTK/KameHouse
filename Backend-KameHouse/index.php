@@ -91,7 +91,7 @@ include 'components/save_send.php';
                     </div>
                     <div class="box">
                         <p>Presupuesto Máximo <span>*</span></p>
-                        <select name="maximum" class="input" required>
+                        <select name="h_max" class="input" required>
                             <option value="10000">$10K</option>
                             <option value="20000">$20K</option>
                             <option value="30000">$30k</option>
@@ -275,7 +275,7 @@ include 'components/save_send.php';
             <?php
                     }
             }else{
-                echo '<p class="empty">¡Aún no se han añadido Propiedades! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+                echo '<p class="empty">¡Aún no se han añadido Propiedades! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">Añadir uno Nuevo</a></p>';
                 }
             ?>
         </div>
@@ -298,6 +298,13 @@ include 'components/save_send.php';
     <script src="js/script.js"></script>
 
     <?php include 'components/message.php'; ?>
+
+    <script>
+    let range = document.querySelector("#range");
+    range.oninput = () => {
+        document.querySelector('#output').innerHTML = range.value;
+    }
+    </script>
 
 </body>
 
