@@ -6,6 +6,7 @@ if (isset($_COOKIE['user_id'])){
     $user_id = $_COOKIE['user_id'];
 }else{
     $user_id = '';
+    header('location:login.php');
 }
 
 
@@ -36,7 +37,71 @@ if (isset($_COOKIE['user_id'])){
     <!-- Fin Cabecera -->
 
     <!-- Sección Panel de Control -->
+    <section class="dashboard">
+        <h1 class="heading">Panel de Control</h1>
+        <div class="box-container">
+            <div class="box">
+                <?php
+            $select_profile = $conn->prepare("SELECT * FROM `users` WHERE id = ? LIMIT 1");
+            $select_profile->execute([$user_id]);
+            $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
+        ?>
+                <h3>Bienvenido de Nuevo!!</h3>
+                <p><?= $fetch_profile['name']; ?></p>
+                <a href="update.php" class="btn">Actualizar Perfil</a>
+            </div>
 
+            <div class="box">
+                <h3>Filtrar Búsqueda</h3>
+                <p>Buscar una Propiedad</p>
+                <a href="search.php" class="btn">Buscar Ahora</a>
+            </div>
+
+            <div class="box">
+                <?php
+            $count_properties = $conn->prepare("SELECT * FROM `property` WHERE user_id = ?");
+            $count_properties->execute([$user_id]);
+            $total_properties = $count_properties->rowCount();
+        ?>
+                <h3><?= $total_properties; ?></h3>
+                <p>Lista de Propiedades</p>
+                <a href="my_listings.php" class="btn">Ver Todas las Propiedades</a>
+            </div>
+
+            <div class="box">
+                <?php
+            $count_requests_received = $conn->prepare("SELECT * FROM `requests` WHERE receiver = ?");
+            $count_requests_received->execute([$user_id]);
+            $total_requests_received = $count_requests_received->rowCount();
+        ?>
+                <h3><?= $total_requests_received; ?></h3>
+                <p>Solicitudes Recibidas</p>
+                <a href="requests.php" class="btn">Ver Todas las Solicitudes</a>
+            </div>
+
+            <div class="box">
+                <?php
+            $count_requests_sent = $conn->prepare("SELECT * FROM `requests` WHERE sender = ?");
+            $count_requests_sent->execute([$user_id]);
+            $total_requests_sent = $count_requests_sent->rowCount();
+        ?>
+                <h3><?= $total_requests_sent; ?></h3>
+                <p>Solicitudes Enviadas</p>
+                <a href="saved.php" class="btn">Ver Solicitudes Enviadas</a>
+            </div>
+
+            <div class="box">
+                <?php
+            $count_saved_properties = $conn->prepare("SELECT * FROM `saved` WHERE user_id = ?");
+            $count_saved_properties->execute([$user_id]);
+            $total_saved_properties = $count_saved_properties->rowCount();
+        ?>
+                <h3><?= $total_saved_properties; ?></h3>
+                <p>Propiedades Guardadas</p>
+                <a href="saved.php" class="btn">Ver Propiedades</a>
+            </div>
+        </div>
+    </section>
     <!-- Fin Panel de Control -->
 
 
