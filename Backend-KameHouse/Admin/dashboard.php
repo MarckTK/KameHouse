@@ -32,7 +32,7 @@ if(isset($_COOKIE['admin_id'])){
 
     <!-- Sección Cabecera  -->
     <?php include '../components/admin_header.php'; ?>
-    <!-- header section ends -->
+    <!-- Fin Cabecera -->
 
     <!-- Sección Panel de Control  -->
     <section class="dashboard">
