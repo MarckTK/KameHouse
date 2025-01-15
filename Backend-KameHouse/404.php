@@ -33,7 +33,7 @@
     <div class="error">
         <div class="error__title">404</div>
         <div class="error__subtitle">Hmmm...</div>
-        <div class="error__description">Parece que uno de los desarrolladores se quedó dormido</div>
+        <div class="error__description">Parece que uno de los desarrolladores se quedaron dormidos</div>
         <a href="index.php" class="error__button error__button--active">Ir al Inicio</a>
         <a href="contact.php" class="error__button">Contáctenos</a>
     </div>
